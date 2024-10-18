@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 private fun fetchWeatherData(city: String) {
-    val apiKey = "6e3d304c01357e424ef023aba9e18635" // Replace with your valid API key
+    val apiKey = "YOUR API KEY" // Replace with your valid API key
     RetrofitInstance.api.getWeatherData(city, apiKey).enqueue(object : Callback<WeatherResponse> {
         override fun onResponse(
             call: Call<WeatherResponse>,
